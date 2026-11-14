@@ -1,0 +1,8 @@
+{
+  "name": "niaspo-vps",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8085, 8086, 8091, 3000]
+}
