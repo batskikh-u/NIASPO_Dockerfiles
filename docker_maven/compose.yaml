@@ -1,0 +1,12 @@
+
+name: docker_maven
+services:
+  maven:
+    image: maven:3.9-eclipse-temurin-21
+    working_dir: /workspace
+    volumes:
+      - ./app:/workspace
+      - m2_cache:/root/.m2
+    command: ["mvn", "-B", "verify"]
+volumes:
+  m2_cache:
